@@ -1,0 +1,102 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #eaeaea;
+	font-family: "Nunito Sans", sans-serif;
+}
+
+.portada{
+	height: 100vh;
+	min-height: 600px;
+	text-align: center;
+	color: navy;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-content: center;
+	justify-content: space-evenly;
+}
+h1, h2, .bold h3{
+	font-weight: bold;
+}
+.timeline:nth-child(even) .timeline-content .timeline-img{
+	position: absolute;
+	width: 40%;
+	right: 80%;
+	top: 75%;
+	display: none;
+}
+
+.timeline:nth-child(odd) .timeline-content .timeline-img{
+	position: absolute;
+	width: 40%;
+	left: 80%;
+	top: 75%;
+	display: none;
+}
+
+footer{
+	margin-top: 15%;
+	padding: 0 5% 10%;
+	color: navy;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-content: center;
+	justify-content: space-evenly;
+}
+footer h3{
+	text-align: center;
+}
+footer li{
+	font-size: 1.1rem;
+}
+
+/*// X-Small devices (portrait phones, less than 576px)*/
+/*// No media query for `xs` since this is the default in Bootstrap*/
+
+/*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) { ... }
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { ... }
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
+
+	.timeline:nth-child(even) .timeline-content .timeline-img{
+		position: absolute;
+		width: 30%;
+		right: 50%;
+		top: 80%;
+		display: block;
+	}
+	.timeline:nth-child(odd) .timeline-content .timeline-img{
+		position: absolute;
+		width: 30%;
+		left: 50%;
+		top: 80%;
+		display: block;
+	}
+}
+
+/*// X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+	.timeline:nth-child(even) .timeline-content .timeline-img{
+		position: absolute;
+		width: 50%;
+		right: 70%;
+		top: 85%;
+		display: block;
+	}
+	.timeline:nth-child(odd) .timeline-content .timeline-img{
+		position: absolute;
+		width: 50%;
+		left: 70%;
+		top: 85%;
+		display: block;
+	}
+}
+
+/*// XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) { ... }
